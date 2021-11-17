@@ -26,7 +26,7 @@ const Home: NextPage = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :( {console.log(error)}</p>;
 
-  return <div>{foo}</div>;
+  // return <div>{foo}</div>;
   return data.rates.map(
     ({ currency, rate }: any): JSX.Element => (
       <div key={currency}>
